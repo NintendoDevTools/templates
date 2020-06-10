@@ -7,6 +7,7 @@ SECTIONS {
     }
 
     .arm9 : {
+        arm9/build/*.o(.entrypoint);
         arm9/build/*.o(.text);
         arm9/build/*.o(.rodata);
         arm9/build/*.o(.data);
@@ -14,6 +15,7 @@ SECTIONS {
     }
 
     .arm7 : {
+        arm7/build/*.o(.entrypoint);
         arm7/build/*.o(.text);
         arm7/build/*.o(.rodata);
         arm7/build/*.o(.data);

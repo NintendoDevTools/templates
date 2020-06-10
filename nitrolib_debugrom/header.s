@@ -2,14 +2,14 @@
 .global entry_arm7
 .global _start
 
-.extern arm9_main
-.extern arm7_main
+.extern _entrypoint_arm7
+.extern _entrypoint_arm9
 
 .section .text
 
 _start:
 entry_arm9:
-    b arm9_main
+    b _entrypoint_arm9
 
 entry_arm7:
-    b arm7_main
+    b _entrypoint_arm7

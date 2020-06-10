@@ -1,3 +1,3 @@
-extern void arm9_main() {
+void arm9_main() {
     // Code goes here
 }
